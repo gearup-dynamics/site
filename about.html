@@ -104,10 +104,10 @@
     </section>
 
     <!-- Skills Section -->
-    <section style="margin-top: 8rem; justify-content: center;">
-        <h1 style="margin-bottom: 8rem; text-align: center; font-size: 3rem; letter-spacing: 2px; font-weight: 200;">OUR
+    <section style="margin-top: 2rem; justify-content: center;">
+        <h1 style="text-align: center; font-size: 3rem; letter-spacing: 2px; font-weight: 200;">OUR
             SKILLS</h1>
-        <p style="font-weight: 200; text-align: center; margin-bottom: 2rem;">
+        <p style="font-weight: 200; text-align: center; margin-bottom: 6rem;">
             Up-to-date with leading industry standards, we bring the right expertise to every job.</p>
         <div style="display: flex; gap: 2rem; margin-left: 16rem;">
             <div style="flex: 1; text-align: right;">
@@ -169,53 +169,5 @@
     </script>
 </body>
 
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-        apiKey: "AIzaSyBQejVpuyRnD7sZfaS_SgbKOM1K4DKUD9Y",
-        authDomain: "gearup-newsletter.firebaseapp.com",
-        projectId: "gearup-newsletter",
-        storageBucket: "gearup-newsletter.firebasestorage.appspot.com",
-        messagingSenderId: "221985266731",
-        appId: "1:221985266731:web:18507922bd01dfccbf1e6e",
-        measurementId: "G-M5W5DVBRQP"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
-    const db = getFirestore(app);
-
-    const form = document.getElementById('newsletter-form');
-    const emailInput = document.getElementById('email-input');
-    const status = document.getElementById('form-status');
-
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const email = emailInput.value;
-
-        try {
-            await addDoc(collection(db, "newsletter"), {
-                email: email,
-                timestamp: new Date()
-            });
-            status.textContent = "🎉 Successfully subscribed!";
-            status.style.color = "lightgreen";
-            form.reset();
-        } catch (error) {
-            console.error("Error adding document: ", error);
-            status.textContent = "⚠️ Something went wrong.";
-            status.style.color = "red";
-        }
-    });
-</script>
 
 </html>

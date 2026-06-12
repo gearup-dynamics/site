@@ -334,7 +334,6 @@ form button:hover {
 }
 
 .faq-section {
-    padding: 5rem 1rem 2rem;
     font-family: Helvetica, sans-serif;
     color: white;
 }
@@ -342,11 +341,14 @@ form button:hover {
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 6rem;
 }
 
 .faq-section h2 {
+    padding: 2rem;
     text-align: center;
-    margin-top: 3rem;
+    letter-spacing: 1.5px;
+    font-weight: 200;
     font-size: 2rem;
     color: rgb(127, 177, 249);
 }
@@ -421,8 +423,7 @@ form button:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin-top: 4rem;
 }
 
 .services-grid h1 {
