@@ -1,0 +1,43 @@
+[
+  {
+    "id": "FS1",
+    "name": "Full Synthetic Oil Change",
+    "descWeb": "Oil and filter service at your location.",
+    "price": 99.95,
+    "priceLabel": "From $99.95",
+    "featured": true,
+    "partsExtra": false,
+    "laborOnly": false
+  },
+  {
+    "id": "TS1",
+    "name": "Seasonal Tire Change",
+    "descWeb": "On-rim seasonal tire swap or rotation.",
+    "price": 59.95,
+    "priceLabel": "From $59.95",
+    "featured": false,
+    "partsExtra": false,
+    "laborOnly": true
+  },
+  {
+    "id": "BAT",
+    "name": "Battery Replacement",
+    "descWeb": "Install new battery and verify stron    g starts.",
+    "price": 79.6,
+    "priceLabel": "From $79.60",
+    "featured": false,
+    "partsExtra": true,
+    "laborOnly": true
+  },
+  {
+    "id": "ATF",
+    "name": "Automatic Transmission Service",
+    "descWeb": "Prevent transmission failure with preventative maintenance.",
+    "price": 69.95,
+    "priceLabel": "From $69.95",
+    "featured": false,
+    "partsExtra": true,
+    "laborOnly": true
+  }
+  
+]

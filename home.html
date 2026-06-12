@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GearUP Automotive Dynamics - Calgary's Premier Mobile Mechanic</title>
+
+  <link rel="icon" type="image/ico" sizes="32x32" href="assets/images/icons/favicon-32x32.ico">
+  <link rel="icon" type="image/ico" sizes="16x16" href="assets/images/icons/favicon-16x16.ico">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Section 1: Testimonials -->
+  <div>
+    <section style="scroll-snap-align: start; position: relative; overflow: hidden; height: 36rem;">
+      <!-- Background container -->
+      <div id="hero-bg" style="
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s ease-in-out;
+  "></div>
+      <!-- Accent overlay image -->
+      <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('assets/images/overlay/blue-stripe-section1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 1;
+    pointer-events: none;
+  "></div>
+      <!-- Dark overlay tint -->
+      <div style="
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+  "></div>
+
+      <!-- Foreground content (testimonials) -->
+      <div style="
+    color: #CACACA;
+    position: relative;
+    min-height: 12rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+  ">
+        <h3 style="
+  position: absolute;
+  top: 8rem;
+  left: 15%;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-align: left;
+">
+          Auto Service, Delivered.
+        </h3>
+        <!-- Testimonial Content Block: fade all together -->
+        <div id="testimonial-container" class="testimonial-content" style="
+        display: flex; 
+        flex: 1 1 0; 
+        min-height: 12rem;
+        position: relative;
+        margin-left: 13%; 
+        align-items: center;">
+          <div style="flex: 1;">
+            <h2 id="testimonial-text" style="
+              font-size: 1.5rem;
+              letter-spacing: 1px;
+              font-weight: 200;
+              max-width: 600px;
+              margin: 0;
+            "></h2>
+          </div>
+          <div style="
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          ">
+            <div id="testimonial-stars" class="stars" style="
+              font-size: 2.0rem;
+              letter-spacing: 10px;
+            "></div>
+            <p id="testimonial-author" style="
+              font-size: 1rem;
+              font-weight: 200;
+              margin-top: 0.5rem;
+            "></p>
+          </div>
+        </div>
+        <!-- Left and Right side blocks stay the same -->
+      </div>
+    </section>
+  </div>
+  <!-- Section 2: About, Services, Discounts -->
+  <section style="background-color: transparent; padding: 4rem 2rem; text-align: center; margin-top: 4rem;">
+    <h2 style="color: white; font-size: 3rem; margin-bottom: 1rem; letter-spacing: 1px; font-weight: 200;">
+      We bring the Shop to you,</h2>
+    <p style="color: white; font-size: 1.2rem; font-weight: 200;">
+      At a price no shop can beat.</p>
+
+  </section>
+  <div
+    style="color: rgb(202, 202, 202);; display: flex; justify-content: center; gap: 3rem; max-width: 1200px; margin: 0 auto; margin-bottom: 8rem; flex-wrap: wrap;">
+
+    <!-- ABOUT US -->
+    <div
+      style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">ABOUT US</h3>
+
+      <!-- Upper section -->
+      <div style="margin-bottom: 2.5rem; min-height:80px">
+        <p style="font-size: 1rem; font-weight: 200;">
+          Founded proudly by undergraduate students from the University of Calgary's Schulich School of Engineering,
+          we have one mission:
+        </p>
+      </div>
+
+      <!-- Lower section (aligned across all columns) -->
+      <div style="font-size: 1rem; font-weight: 200;">
+        <p>
+          To make <strong>honest, affordable, and professional</strong> automotive service accessible for everyone.
+        </p>
+      </div>
+    </div>
+
+    <!-- WHAT WE DO -->
+    <div
+      style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">WHAT WE DO</h3>
+
+      <!-- Upper section -->
+      <div style="margin-bottom: 2.5rem; min-height:80px">
+        <p style="font-size: 1rem;">
+          We bring professional service to your driveway, on your schedule. From oil changes to tire swaps,
+          we bring what you expect and more.
+        </p>
+      </div>
+
+      <!-- Lower section (aligned across all columns) -->
+      <div div style="font-size: 1rem; font-weight: 200;">
+        <p>
+          No lines, no waiting rooms, no extra vehicle and no ride needed. <strong>Spend less time waiting, and more
+            doing what matters most.</strong>
+        </p>
+      </div>
+    </div>
+    <!-- DISCOUNTS -->
+    <div
+      style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">DISCOUNTS</h3>
+
+      <!-- Upper section -->
+      <div style="margin-bottom: 2.5rem; min-height:80px;">
+        <p style="font-size: 1rem;">
+          Students get 10% off all services with valid ID. Because we know the grind and we're here to help.
+        </p>
+      </div>
+
+      <!-- Lower section (aligned across all columns) -->
+      <div div style="font-size: 1rem; font-weight: 200;">
+        <p>
+          And, as a thank you to our community, we offer a 10% seniors' discount with valid government-issued ID for
+          ages 65+.
+        </p>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- Section 3: Map and Image Background -->
+  <section style="display: flex; flex-wrap: wrap; height: 400px; margin-top:5rem;">
+    <!-- Left: Text with image background and overlay -->
+    <div class="bg-pan-animate" style="
+  flex: 1;
+  min-width: 250px;
+  background-image: url('assets/images/section2/bg.jpg');
+  background-position: left center;
+  background-size: 110%;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+">
+      <!-- Dark overlay -->
+      <div style="
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.90);
+      z-index: 0;
+    "></div>
+
+      <!-- Content above overlay -->
+      <div style="position: relative; z-index: 1; margin-left: 30%; max-width: 400px; text-align: right;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Proudly Serving Calgary, Okotoks, Chestermere, and
+          Airdrie!</h2>
+        <p style="font-size: 1.0rem; margin-top: 0.5rem; letter-spacing: 1.2px; font-weight: 200;">
+          OUR HOME COMMUNITY.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right: Map with solid black background -->
+    <div style="
+    flex: 1;
+    min-width: 300px;
+    background-color: black;
+    height: 100%;
+  ">
+      <div id="map" style="height: 100%;"></div>
+    </div>
+  </section>
+
+  <!-- Section 4: Services Overview -->
+  <section
+    style="background-color: transparent; color: #CACACA; padding: 4rem 2rem; margin-top: 2rem; text-align: center;">
+    <h2 style="font-weight: 400; font-size: 2.5rem; margin-bottom: 1rem; letter-spacing:2px;">AT YOUR SERVICE.</h2>
+    <h3 style="font-weight: 200; font-size: 1.2rem; margin-bottom: 6rem;">
+      See What We Offer Below, or Check Out Our Full List of Services.</h3>
+
+    <div style="
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    letter-spacing:1px;
+  ">
+      <!-- Service Block Template -->
+      <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem; letter-spacing: 0.75px ">
+        <img src="assets/icons/services/oil.svg" alt="Oil Change" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">OIL AND LUBE</h3>
+          <p style="margin: 0; font-weight: 200;">Quick, clean, and OEM lube and filter in your driveway.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem;">
+        <img src="assets/icons/services/brake.svg" alt="Brakes" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">BRAKES</h3>
+          <p style="margin: 0; font-weight: 200;">Pad and rotor replacement, inspections, and maintenance.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem;">
+        <img src="assets/icons/services/battery.svg" alt="Battery" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">BATTERIES</h3>
+          <p style="margin: 0; font-weight: 200;">Testing, replacement, or upgrades—no tow truck needed.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem;">
+        <img src="assets/icons/services/detail.svg" alt="Detailing" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">DETAILING</h3>
+          <p style="margin: 0; font-weight: 200;">Interior and exterior cleans, polishes, and shines— at your location.
+          </p>
+        </div>
+      </div>
+
+           <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem;">
+        <img src="assets/icons/services/inspect.svg" alt="Inspections" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">INSPECTIONS</h3>
+          <p style="margin: 0; font-weight: 200;">Full-mechanical, yearly check-up, and pre-purchase inspections.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem;">
+        <img src="assets/icons/services/ac.svg" alt="A/C" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">HVAC</h3>
+          <p style="margin: 0; font-weight: 200;">We'll recharge or repair your climate control to keep you cozy.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem;">
+        <img src="assets/icons/services/body.svg" alt="Auto Body" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">COSMETIC</h3>
+          <p style="margin: 0; font-weight: 200;">Dents, small repairs, sanding, paint touch-ups and more.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; text-align: left; gap: 1rem;">
+        <img src="assets/icons/services/nav.svg" alt="Navigation" style="height: 60px; margin-top: 0.25rem;" />
+        <div>
+          <h3 style="margin: 0 0 0.25rem;">NAVIGATION</h3>
+          <p style="margin: 0; font-weight: 200;">We install or upgrade GPS and smart device integration and custom
+            systems.</p>
+        </div>
+      </div>
+    </div>
+    <!-- "And much more" link -->
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="services.html" class="more-link">
+        AND MANY MORE →
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Section 5: Socials -->
+  <section style="
+  background-color: transparent;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+">
+    <h2 style="font-size: 1.5rem; margin-bottom: 2rem;">FOLLOW US</h2>
+
+    <div style="
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+  ">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/gearup_yyc" target="_blank" class="follow-link">
+        <img src="assets/icons/instagram.svg" alt="Instagram" style="height: 24px;" />
+        @gearup_yyc
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/gearup.dynamics" target="_blank" class="follow-link">
+        <img src="assets/icons/facebook.svg" alt="Facebook" style="height: 24px;" />
+        GearUP Automotive Dynamics
+      </a>
+
+      <!-- Youtube -->
+      <a href="https://www.youtube.com/@GearUPDynamics" target="_blank" class="follow-link">
+        <img src="assets/icons/youtube.svg" alt="Youtube" style="height: 24px;" />
+        @GearUPDynamics
+      </a>
+
+      <!-- Reddit-->
+      <a href="https://www.reddit.com/user/gearup_automotive/" target="_blank" class="follow-link">
+        <img src="assets/icons/reddit.svg" alt="Reddit" style="height: 24px;" />
+        u/gearup_automotive
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 6: Footer -->
+  <div id="footer-placeholder"></div>
+
+
+
+  <!-- Navigation Bar Fetch -->
+  <script>
+    fetch("partials/nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <!-- Footer Fetch -->
+  <script>
+    fetch("partials/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+
+  <!-- Testimonials Cycle Script -->
+  <script>
+    // Use a combined container for all testimonial content
+    const container = document.getElementById('testimonial-container');
+    const textEl = document.getElementById("testimonial-text");
+    const authorEl = document.getElementById("testimonial-author");
+    const starsEl = document.getElementById("testimonial-stars");
+
+    let testimonials = [];
+    let current = 0;
+
+    function renderTestimonial(data) {
+      let stars = "★".repeat(data.stars) + "☆".repeat(5 - data.stars);
+      textEl.textContent = `“${data.quote}”`;
+      authorEl.textContent = `– ${data.author} on ${data.platform}`;
+      starsEl.textContent = stars;
+    }
+
+    function updateTestimonial() {
+      container.classList.remove('active');
+      setTimeout(() => {
+        current = (current + 1) % testimonials.length;
+        renderTestimonial(testimonials[current]);
+        container.classList.add('active');
+      }, 600); // match the transition time in CSS
+    }
+
+    fetch('data/testimonials.json')
+      .then(res => res.json())
+      .then(data => {
+        testimonials = data;
+        renderTestimonial(testimonials[0]);
+        container.classList.add('active');
+        setInterval(updateTestimonial, 3000);
+      });
+  </script>
+  <!-- Background Image Cycling Script -->
+  <script>
+    const bgImages = [
+      "assets/images/section1/1.jpg",
+      "assets/images/section1/2.jpg",
+      "assets/images/section1/3.jpg",
+      "assets/images/section1/4.jpg",
+      "assets/images/section1/5.jpg",
+      "assets/images/section1/6.jpg",
+    ];
+
+    let currentBg = 0;
+    const bgEl = document.getElementById("hero-bg");
+
+    function switchBackground() {
+      currentBg = (currentBg + 1) % bgImages.length;
+      bgEl.style.opacity = 0;
+
+      setTimeout(() => {
+        bgEl.style.backgroundImage = `url(${bgImages[currentBg]})`;
+        bgEl.style.opacity = 1;
+      }, 1000); // fade-out duration
+    }
+
+    // Initial load
+    bgEl.style.backgroundImage = `url(${bgImages[0]})`;
+    bgEl.style.transition = "opacity 1.5s ease-in-out";
+
+    // Start background cycling
+    setInterval(switchBackground, 15000); // every 15 seconds
+  </script>
+
+
+  <!-- Leaflet Map Initialization -->
+  <script>
+    // Calgary coordinates
+    const calgaryCenter = [51.0047, -114.0719];
+
+    // Load Calgary GeoJSON boundary
+    fetch('assets/dev/calgary.geojson')
+      .then(response => response.json())
+      .then(data => {
+        L.geoJSON(data, {
+          style: {
+            color: "white",
+            weight: 1,
+            fillOpacity: 0.1
+          }
+        }).addTo(map);
+      });
+    // Load Okotoks GeoJSON boundary
+    fetch('assets/dev/okotoks.geojson')
+      .then(res => res.json())
+      .then(data => {
+        L.geoJSON(data, {
+          style: {
+            color: "white",
+            weight: 1,
+            fillOpacity: 0.1
+          }
+        }).addTo(map);
+      });
+    fetch('assets/dev/airdrie.geojson')
+      .then(response => response.json())
+      .then(data => {
+        L.geoJSON(data, {
+          style: {
+            color: "white",
+            weight: 1,
+            fillOpacity: 0.1
+          }
+        }).addTo(map);
+      });
+    fetch('assets/dev/chestermere.geojson')
+      .then(response => response.json())
+      .then(data => {
+        L.geoJSON(data, {
+          style: {
+            color: "white",
+            weight: 1,
+            fillOpacity: 0.1
+          }
+        }).addTo(map);
+      });
+
+    const map = L.map('map').setView(calgaryCenter, 8.75);
+
+    // Add dark tile layer
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 18,
+    }).addTo(map);
+
+    // Grey-out outside Calgary using bounds box
+    L.rectangle(calgaryBounds, {
+      color: "#00ffcc",
+      weight: 2,
+      fillOpacity: 0.1
+    }).addTo(map);
+
+
+  </script>
+</body>
+
+</html>

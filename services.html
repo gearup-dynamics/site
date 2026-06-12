@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GearUP Automotive Dynamics - Our Services</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+    <!-- Hero Section -->
+    <section id="services-hero" class="hero" style="
+        position: relative;
+        width: 100%;
+        height: 36rem;
+        display: flex;
+        justify-content: left;
+        align-items: top;
+        text-align: center;
+        overflow: hidden;
+    ">
+        <!-- Background Image -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/bg/services-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(10%);
+            z-index: 1;
+            animation: slowBreathingZoom 20s ease-in-out infinite alternate;
+            transform-origin: center;
+        "></div>
+        <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('assets/images/overlay/blue-stripe-section1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0.075;
+    z-index: 2;
+    pointer-events: none;
+  "></div>
+        <!-- Hero Text -->
+        <div class="hero-text" style="position: relative; z-index: 3; padding-top: 10rem; margin-left: 12%;">
+            <div class="hero-title-wrapper">
+                <h1 class="hero-title">
+                    <span class="static-word">AUTOMOTIVE </span>
+                    <span id="rotatingWord">SERVICE</span>
+                </h1>
+                <h2 style="
+                font-family: 'Helvetica', sans-serif;
+                color: #CACACA;
+                font-size: 1.5rem;
+                font-weight: 200;
+                letter-spacing: 1.2px;
+                position: absolute;
+            ">
+                    Delivered to Your Home Parking Space.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!--- Services Section --->
+    <section style="padding: 4rem; max-width: 1000px; margin: 0 auto;">
+        <h2 style="font-size: 3.5rem; font-weight: 300; text-align: center; color: white;">
+            Our Services
+        </h2>
+        <p style="text-align: center; font-size: 0.9rem; font-weight: 200; color: #AAAAAA; margin-bottom: 4rem;">
+            *Includes <strong>labor</strong>
+            only — parts quoted before work completed</p>
+
+        <div
+            style="padding: 2rem; text-align: center; border: 1px solid #333; border-radius: 10px; background-color: #0a0a0a;">
+            <h1 style="font-size: 2rem; color: white; margin-bottom: 0.5rem;">Full
+                Synthetic Oil Change</h1>
+            <h2 style="font-size: 1rem; letter-spacing: 0.5px; color: #CACACA; font-weight: 300;">The right oil and
+                filter for your
+                vehicle. OEM grade, specification, and viscosity. Torqued to specification, cleaned and handled with
+                care. At the most affordable price in Calgary, and comes with a complimentary multipoint inspection.
+            </h2>
+            <h3 style="font-size: 3rem; font-weight: 500; color: rgb(127, 177, 249);">$99.95</h3>
+            <span style="font-size: 0.75rem; color: rgb(33, 82, 169);">FOR FIRST 5 LITRES. ADDITIONAL CHARGE FOR
+                LARGER QUANTITIES</span>
+        </div>
+
+        <div id="services-grid" class="services-grid"></div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="position: relative; padding: 6rem 4rem; text-align: center; color: white;">
+        <h3 style="color: #CACACA; text-transform: uppercase;">Ready for <span style="font-weight: 500">unmatched</span>
+            auto service?</h3>
+        <h2 style="font-size: 2rem; margin: 1rem 0; font-weight: 200; margin-bottom: 2rem;">GET YOUR FREE CONSULTATION
+            TODAY</h2>
+        <a style="display:inline-block; margin-top: 2rem; padding: 1.5rem 3rem; background: #0053AF; color: white; border: none; border-radius: 12px; font-weight: 300; font-size: 1rem; transition: transform 0.1s ease, background-color 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#70B3FF';"
+            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#0053AF';" href="booking.html">
+            BOOK NOW</a>
+    </section>
+
+    <!--- Benefits Section -->
+    <section class="benefits-section">
+        <div class="benefits-text">
+            <h1>WHY CHOOSE MOBILE SERVICE?</h1>
+            <div class="benefit-item">
+                <h2>CONVENIENCE</h2>
+                <p>We come to your location—home driveway, garage, or office parking. No awkward drop-off coordination
+                    required.</p>
+            </div>
+            <div class="benefit-item">
+                <h2>TIME</h2>
+                <p>No waiting rooms, no "quick" lube line-ups, no delays. Get service on your schedule.</p>
+            </div>
+            <div class="benefit-item">
+                <h2>COST</h2>
+                <p>No shop overhead = lower prices for you. We have the most competitive pricing in Calgary!</p>
+            </div>
+        </div>
+        <div class="benefits-image"></div>
+    </section>
+
+    <!-- Contact Button -->
+    <section style="position: relative; margin-top: 6rem; text-align: center; color: white;">
+        <h3 style="font-size: 1rem; color: #CACACA; text-transform: uppercase;">Don't see what you need?</h3>
+        <h2 style="font-size: 2rem; margin: 1rem 0; font-weight: 200; margin-bottom: 2rem;">CONTACT US TODAY</h2>
+        <a style="display:inline-block; margin-top: 2rem; padding: 1.5rem 3rem; background: #0053AF; color: white; border: none; border-radius: 12px; font-weight: 300; font-size: 1rem; transition: transform 0.1s ease, background-color 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#70B3FF';"
+            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#0053AF';" href="contact.html">
+            CALL / TEXT / EMAIL</a>
+    </section>
+
+    <!--- FAQ -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faq-item">
+                <h3>Do you service all vehicle makes and models?</h3>
+                <p>Yes, we service domestic, import, and light-duty trucks.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do I need to supply parts?</h3>
+                <p>No, we can source parts and quote them before any work begins.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a travel or mobile fee?</h3>
+                <p>Travel within Calgary and Okotoks city limits is included.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I pay?</h3>
+                <p>We accept credit, debit, and e-Transfer. Cash payments are accepted without small change.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Navigation Bar Fetch -->
+    <script>
+        fetch("partials/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
+    <!-- Footer Fetch -->
+    <script>
+        fetch("partials/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+    <!-- Rotating Hero Word-->
+    <script>
+        const words = ["SERVICE", "REPAIR", "MAINTENANCE", "DETAILING", "SOLUTIONS"];
+        let index = 0;
+        const rotatingWord = document.getElementById("rotatingWord");
+
+        function rotateWord() {
+            // Fade out current word
+            rotatingWord.classList.add("fade-out");
+
+            setTimeout(() => {
+                // Update the word after fade-out
+                index = (index + 1) % words.length;
+                rotatingWord.textContent = words[index];
+
+                // Fade back in
+                rotatingWord.classList.remove("fade-out");
+            }, 250); // Matches the CSS transition time
+        }
+        setInterval(rotateWord, 1500);
+    </script>
+    <!-- Autopopulate Service Information-->
+    <script>
+        fetch("data/services.json")
+            .then(response => response.json())
+            .then(services => {
+                const grid = document.getElementById("services-grid");
+
+                services
+                    .filter(service => !service.featured)
+                    .forEach(service => {
+                        const card = document.createElement("div");
+                        card.className = "service-card";
+
+                        card.innerHTML = `
+            <h1>${service.name}</h1>
+            <h2>${service.descWeb}</h2>
+            <h3>${service.priceLabel}${service.partsExtra ? '<span class="sup-note">*</span>' : ''}</h3>
+          `;
+
+                        grid.appendChild(card);
+                    });
+            });
+    </script>
+
+
+</body>
+
+</html>

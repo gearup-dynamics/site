@@ -1,0 +1,448 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background: linear-gradient(to bottom, #000716, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+html {
+    background: linear-gradient(to bottom, #000716, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+html,
+body {
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.nav-link {
+    font: 'Helvetica', sans-serif;
+    font-weight: 200;
+    color: #CACACA;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    letter-spacing: 1.5px;
+}
+
+.nav-link:hover {
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+
+.nav-button {
+    font: 'Helvetica', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    letter-spacing: 1.5px;
+    color: black;
+    background: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+}
+
+.nav-button:hover {
+    transform: scale(1.15);
+}
+
+.follow-link {
+    font: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    letter-spacing: 0.5px;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.follow-link:hover {
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+
+.call-link {
+    font: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    letter-spacing: 5px;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.call-link:hover {
+    transform: scale(1.1);
+}
+
+.more-link {
+    display: inline-block;
+    color: rgb(127, 177, 249);
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+
+.more-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+#newsletter-form input[type="email"] {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 300px;
+    transition: border 0.3s ease;
+}
+
+#newsletter-form input[type="email"]:focus {
+    outline: none;
+    border: 1px solid rgb(127, 177, 249);
+}
+
+#newsletter-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(127, 177, 249);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#newsletter-form button:hover {
+    background-color: #5ea2ff;
+    transform: scale(1.05);
+}
+
+#form-status {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#hero-bg {
+    animation: zoomPan 30s infinite alternate ease-in-out;
+}
+
+@keyframes zoomPan {
+    0% {
+        transform: scale(1) translateX(0%);
+    }
+
+    100% {
+        transform: scale(1.1) translateX(-5%);
+    }
+}
+
+@keyframes bgPanX {
+    0% {
+        background-position: left center;
+    }
+
+    100% {
+        background-position: right center;
+    }
+}
+
+.bg-pan-animate {
+    background-size: 110%;
+    background-repeat: no-repeat;
+    animation: bgPanX 30s ease-in-out infinite alternate;
+}
+
+#nav-placeholder {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#nav-placeholder nav {
+    width: 100%;
+}
+
+/* Updated styles for contact form inputs, textarea, and button */
+form input,
+form textarea {
+    background-color: #1c1c1c;
+    color: white;
+    border: 0px solid #555;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #70B3FF;
+}
+
+form button {
+    background-color: #18325a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #255d9b;
+    transform: scale(1.05);
+}
+
+.benefits-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+.benefits-text {
+    flex: 0.5;
+    background-color: #0a0a0a;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits-text h1 {
+    font-size: 2.5rem;
+    color: rgb(127, 177, 249);
+    margin-bottom: 2rem;
+}
+
+.benefit-item h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    color: #CACACA;
+    margin-top: 0.5rem;
+}
+
+.benefits-image {
+    flex: 0.5;
+    background: url('../assets/images/bg/services-benefits.jpg') center center / cover no-repeat;
+    position: relative;
+    filter: brightness(60%);
+}
+
+.benefits-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-cta {
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.contact-cta .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-cta p {
+    color: #cacaca;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-cta .cta-button {
+    display: inline-block;
+    background-color: rgb(33, 82, 169);
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-cta .cta-button:hover {
+    background-color: #5fa7f1;
+}
+
+.faq-section {
+    padding: 5rem 1rem 2rem;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: rgb(127, 177, 249);
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    color: #cacaca;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.hero-title-wrapper {
+    text-align: center;
+}
+
+.hero-title {
+    font-family: Helvetica, sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 300;
+    color: white;
+    white-space: nowrap;
+}
+
+
+/* Rotating word styles for hero headline */
+#rotatingWord {
+    display: inline-block;
+    min-width: 14ch;
+    /* Reserve space for longest word */
+    text-align: left;
+    /* Prevent center-alignment inside span */
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#rotatingWord.fade-out {
+    opacity: 0;
+}
+
+#rotatingWord.fade-in {
+    opacity: 1;
+}
+
+/* Testimonial Fade Transition Styles */
+.testimonial-content {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.testimonial-content.active {
+    opacity: 1;
+    position: relative;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.services-grid h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.services-grid h2 {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #CACACA;
+    margin-bottom: 0.25rem;
+}
+
+.services-grid h3 {
+    font-weight: 200;
+    color: rgb(127, 177, 249);
+    letter-spacing: 0.75px;
+}
