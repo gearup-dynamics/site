@@ -80,7 +80,7 @@
     </section>
 
     <!--- Services Section --->
-    <section style="padding: 4rem; max-width: 1000px; margin: 0 auto;">
+    <section style="padding-top: 6rem; max-width: 1000px; margin: 0 auto;">
         <h2 style="font-size: 3.5rem; font-weight: 300; text-align: center; color: white;">
             Our Services
         </h2>
@@ -106,10 +106,10 @@
     </section>
 
     <!-- Contact Button -->
-    <section style="position: relative; margin-bottom: 4rem; text-align: center; color: white;">
+    <section style="position: relative; padding-top: 2rem; padding-bottom: 8rem; text-align: center; color: white;">
         <h3 style="font-size: 1rem; color: #CACACA;">Don't see what you need?</h3>
         <h2 style="font-size: 2rem; margin: 1rem 0; font-weight: 200; margin-bottom: 2rem;">CONTACT US TODAY</h2>
-        <a style="display:inline-block; margin-top: 2rem; padding: 1.5rem 3rem; background: #0053AF; color: white; border: none; border-radius: 12px; font-weight: 300; font-size: 1rem; transition: transform 0.1s ease, background-color 0.3s ease;"
+        <a style="display:inline-block; padding: 1.5rem 3rem; background: #0053AF; color: white; border: none; border-radius: 12px; font-weight: 300; font-size: 1rem; transition: transform 0.1s ease, background-color 0.3s ease;"
             onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#70B3FF';"
             onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#0053AF';" href="contact.html">
             CALL / TEXT / EMAIL</a>
@@ -137,7 +137,7 @@
     </section>
 
     <!--- FAQ -->
-    <section class="faq-section">
+    <section class="faq-section" style="padding-top: 4rem;">
         <div class="faq-container">
             <h2>FREQUENTLY ASKED QUESTIONS</h2>
             <div class="faq-item">
@@ -149,8 +149,8 @@
                 <p>No, we source parts and quote them before any work begins.</p>
             </div>
             <div class="faq-item">
-                <h3>Is there a travel or mobile fee?</h3>
-                <p>Travel within Calgary city limits is included. A mobile fee may apply outside of city limits.</p>
+                <h3>What is your service area?</h3>
+                <p>We service anywhere within Calgary, Okotoks, Chestermere, and Airdrie city limits without a mobile fee.  </p>
             </div>
             <div class="faq-item">
                 <h3>How do I pay?</h3>
@@ -206,7 +206,7 @@
                 const grid = document.getElementById("services-grid");
 
                 services
-                    .filter(service => !service.featured)
+                    .filter(service => service.onGrid)
                     .forEach(service => {
                         const card = document.createElement("div");
                         card.className = "service-card";

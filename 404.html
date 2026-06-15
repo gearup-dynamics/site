@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GearUP Automotive | Calgary Mobile Oil Changes & Service</title>
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="assets/images/icons/favicon-32x32.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="assets/images/icons/favicon-16x16.ico">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <!-- LocalBusiness Schema-->
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutoRepair",
+  "name":"GearUP Automotive Dynamics",
+  "url":"https://gearup-auto.ca",
+  "telephone":"+14036716271",
+  "areaServed":"Calgary",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Calgary",
+    "addressRegion":"AB",
+    "addressCountry":"CA"
+  }
+}
+</script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <section style="margin: 12rem 0 12rem 0; text-align: center;">
+        <!-- Background Image -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/bg/services-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(10%);
+            z-index: 1;
+        "></div>
+        <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('assets/images/overlay/blue-stripe-section1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0.075;
+    z-index: 2;
+    pointer-events: none;
+  "></div>
+        <div class="hero-text" style="position:relative; z-index: 3">
+            <h1 style="color: #CACACA; letter-spacing: 2px; font-size: 5rem; text-transform: uppercase;">Page not found
+            </h1>
+            <h2 style="font-size: 2rem; color: #70B3FF;">Looks like this page needs an inspection.</h2>
+            <h2 style="font-size: 1.75rem; color: #CACACA;">Let's get you back on the road.</h2>
+            <a style="display:inline-block; margin-top: 2rem; padding: 1.5rem 3rem; background: #0053AF; color: white; border: none; border-radius: 12px; font-weight: 300; font-size: 1rem; transition: transform 0.1s ease, background-color 0.3s ease;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#70B3FF';"
+                onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#0053AF';" href="contact.html">
+                HOMEPAGE</a>
+        </div>
+
+    </section>
+
+
+    <div id="footer-placeholder"></div>
+    <!-- Navigation Bar Fetch -->
+    <script>
+        fetch("partials/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
+    <!-- Footer Fetch -->
+    <script>
+        fetch("partials/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
