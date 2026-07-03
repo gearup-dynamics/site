@@ -1,0 +1,55 @@
+.threeway-container {
+    background-color: transparent;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.threeway-title {
+    color: var(--text-bright-1);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.threeway-subtitle {
+    color: var(--text-bright-1);
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.threeway-content {
+    color: var(--text-bright-2);
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 75%;
+    margin: 0 auto 8rem;
+    flex-wrap: wrap;
+}
+
+.threeway-content p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.threeway-column {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.threeway-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.threeway-upper {
+    margin-bottom: 2.5rem;
+    min-height: 80px
+}

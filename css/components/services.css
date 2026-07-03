@@ -1,0 +1,132 @@
+.services-main {
+    padding-top: 6rem;
+    max-width: 1000px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+}
+
+.services-main h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--text-bright-1);
+}
+
+.services-main p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: var(--text-bright-2);
+    margin-bottom: 4rem;
+}
+
+.services-main-featured {
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid var(--form-outline-base);
+    border-radius: 10px;
+    background-color: var(--form-bg);
+}
+
+.services-main-featured h1 {
+    font-size: 2rem;
+    color: var(--text-bright-1);
+    margin-bottom: 0.5rem;
+}
+
+.services-main-featured h2 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color: var(--text-bright-2);
+    font-weight: 300;
+}
+
+.services-main-featured h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--text-bright-3);
+}
+
+.service-preview-title {
+    background-color: transparent;
+    color: var(--text-bright-2);
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.service-preview-title h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.service-preview-title h3 {
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-bottom: 6rem;
+}
+
+.service-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+.service-preview-block {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+    letter-spacing: 0.75px
+}
+
+.service-preview-block img {
+    height: 60px;
+    margin-top: 0.25rem;
+}
+
+.service-preview-block h3 {
+    margin: 0 0 0.25rem;
+}
+
+.service-preview-block p {
+    margin: 0;
+    font-weight: 200;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 4rem auto 0;
+}
+
+.services-grid h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--text-bright-1);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.services-grid h2 {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: var(--text-bright-2);
+    margin-bottom: 0.25rem;
+    text-align: left;
+}
+
+.services-grid h3 {
+    font-weight: 200;
+    color: var(--text-bright-3);
+    letter-spacing: 0.75px;
+}

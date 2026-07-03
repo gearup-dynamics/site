@@ -1,188 +1,251 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<style>
-  /* Set page-wide styles */
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica', sans-serif;
-    background: linear-gradient(to bottom, #000716, #000000);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: white;
-  }
-
-  html {
-    background: linear-gradient(to bottom, #000716, #000000);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-
-  html,
-  body {
-    background-color: black;
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  h1,
-  h2 {
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin: 0.5rem 0;
-  }
-
-  h3 {
-    font-weight: 200;
-    letter-spacing: 1.5px;
-  }
-
-  p {
-    margin: 0.5rem 0;
-  }
-
-  .nav-link {
-    font: 'Helvetica', sans-serif;
-    font-weight: 200;
-    color: #CACACA;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.2s ease;
-    letter-spacing: 1.5px;
-  }
-
-  .nav-link:hover {
-    transform: scale(1.15);
-    text-decoration: underline;
-  }
-
-  .follow-link {
-    font: 'Roboto', sans-serif;
-    font-weight: 200;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.2s ease;
-    letter-spacing: 0.5px;
-    align-items: center;
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .follow-link:hover {
-    transform: scale(1.15);
-    text-decoration: underline;
-  }
-
-  .call-link {
-    font: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 3rem;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.2s ease;
-    letter-spacing: 5px;
-    align-items: center;
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .call-link:hover {
-    transform: scale(1.05);
-  }
-
-  #newsletter-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-  }
-
-  #newsletter-form input[type="email"] {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 6px;
-    background-color: #1a1a1a;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 300px;
-    transition: border 0.3s ease;
-  }
-
-  #newsletter-form input[type="email"]:focus {
-    outline: none;
-    border: 1px solid rgb(127, 177, 249);
-  }
-
-  #newsletter-form button {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 6px;
-    background-color: rgb(127, 177, 249);
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  #newsletter-form button:hover {
-    background-color: #5ea2ff;
-    transform: scale(1.05);
-  }
-
-  #form-status {
-    text-align: center;
-    margin-top: 1rem;
-    font-weight: 300;
-    font-size: 1rem;
-  }
-
-  #hero-bg {
-    animation: zoomPan 30s infinite alternate ease-in-out;
-  }
-
-  @keyframes zoomPan {
-    0% {
-      transform: scale(1) translateX(0%);
-    }
-
-    100% {
-      transform: scale(1.1) translateX(-5%);
-    }
-  }
-
-  @keyframes bgPanX {
-    0% {
-      background-position: left center;
-    }
-
-    100% {
-      background-position: right center;
-    }
-  }
-
-  .bg-pan-animate {
-    background-size: 110%;
-    background-repeat: no-repeat;
-    animation: bgPanX 30s ease-in-out infinite alternate;
-  }
-</style>
-
-
-<html>
 <head>
-    <meta http-equiv="refresh" content="0; url=home.html">
-    <title>Redirecting to Homepage...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GearUP Automotive | Calgary Mobile Auto Service</title>
+
+  <link rel="icon" type="image/ico" sizes="32x32" href="assets/images/icons/favicon-32x32.ico">
+  <link rel="icon" type="image/ico" sizes="16x16" href="assets/images/icons/favicon-16x16.ico">
+
+  <!-- Main CSS-->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <!-- LocalBusiness Schema-->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutoRepair",
+  "name":"GearUP Automotive Dynamics",
+  "url":"https://gearup-auto.ca",
+  "telephone":"+14036716271",
+  "areaServed":"Calgary",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Calgary",
+    "addressRegion":"AB",
+    "addressCountry":"CA"
+  }
+}
+</script>
 </head>
+
 <body>
-    <p>Redirecting to Homepage...</p>
+  <div id="nav-placeholder"></div>
+
+  <!-- Section 1: Testimonials -->
+  <div>
+    <section class="hero-testimonials">
+      <!-- Background container -->
+      <div id="hero-bg" class="hero-bg"></div>
+      <!-- Accent overlay image -->
+      <div class="hero-bg-overlay"></div>
+      <!-- Dark overlay tint -->
+      <div class="hero-bg-tint"></div>
+
+      <!-- Foreground content (testimonials) -->
+      <div class="hero-content">
+        <h3 class="testimonial-title">
+          Auto Service. <span>Delivered.</span>
+        </h3>
+
+        <!-- Testimonial Content Block: fade all together -->
+        <div id="testimonial-container" class="testimonial-content">
+          <div style="flex: 1;">
+            <h2 id="testimonial-text" class="testimonial-text"></h2>
+          </div>
+          <div class="testimonial-info">
+            <div id="testimonial-stars" class="testimonial-stars"></div>
+            <p id="testimonial-author" class="testimonial-author"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Section 2: About, Services, Discounts -->
+  <section class="threeway-container">
+    <h2 class="threeway-title">
+      We bring the Shop to you,</h2>
+    <p class="threeway-subtitle">
+      At a price no shop can beat.</p>
+    <div class="threeway-content">
+      <!-- ABOUT US -->
+      <div class="threeway-column">
+        <h3>ABOUT US</h3>
+
+        <!-- Upper section -->
+        <div class="threeway-upper">
+          <p>
+            Founded proudly by undergraduate students from the University of Calgary's Schulich School of Engineering,
+            we have one mission:
+          </p>
+        </div>
+
+        <!-- Lower section (aligned across all columns) -->
+        <div>
+          <p>
+            To make <strong>honest, affordable, and professional</strong> automotive service accessible for everyone.
+          </p>
+        </div>
+      </div>
+
+      <!-- WHAT WE DO -->
+      <div class="threeway-column">
+        <h3>WHAT WE DO</h3>
+
+        <!-- Upper section -->
+        <div class="threeway-upper">
+          <p>
+            We bring professional service to your driveway, on your schedule. From oil changes to tire swaps,
+            we bring what you expect and more.
+          </p>
+        </div>
+
+        <!-- Lower section (aligned across all columns) -->
+        <div>
+          <p>
+            No lines, no waiting rooms, no extra vehicle and no ride needed. <strong>Spend less time waiting, and more
+              doing what matters most.</strong>
+          </p>
+        </div>
+      </div>
+      <!-- DISCOUNTS -->
+      <div class="threeway-column">
+        <h3>DISCOUNTS</h3>
+
+        <!-- Upper section -->
+        <div class="threeway-upper">
+          <p>
+            Students get 10% off all services with valid ID. Because we know the grind and we're here to help.
+          </p>
+        </div>
+
+        <!-- Lower section (aligned across all columns) -->
+        <div>
+          <p>
+            And, as a thank you to our community, we offer a 10% seniors' discount with valid government-issued ID for
+            ages 65+.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Map and Image Background -->
+  <section class="split">
+    <!-- Left: Text with image background and overlay -->
+    <div class="bg-pan-animate-split">
+      <!-- Dark overlay -->
+      <div class="bg-pan-tint"></div>
+
+      <!-- Content above overlay -->
+      <div class="split-content">
+        <h2>Proudly Serving Calgary, Okotoks, Chestermere, and Airdrie!</h2>
+        <p>OUR HOME COMMUNITY.</p>
+      </div>
+    </div>
+
+    <!-- Right: Map with solid black background -->
+    <div class="map-section">
+      <div id="map" class="map"></div>
+    </div>
+  </section>
+
+  <!-- Section 4: Services Preview -->
+  <section class="service-preview-title">
+    <h2>AT YOUR SERVICE.</h2>
+    <h3>See What We Offer Below, or Check Out Our Full List of Services.</h3>
+    <div class="service-preview-grid">
+      <!-- Service Block Template -->
+      <div class="service-preview-block">
+        <img src="assets/icons/services/oil.svg" alt="Oil Change" />
+        <div>
+          <h3>OIL AND LUBE</h3>
+          <p>Quick, clean, and OEM lube and filter in your driveway.</p>
+        </div>
+      </div>
+
+      <div class="service-preview-block">
+        <img src="assets/icons/services/maintenance.svg" alt="Maintenance" />
+        <div>
+          <h3>MAINTENANCE</h3>
+          <p>Transmission, AWD, Belts, you name it. We keep your car running
+            smooth.</p>
+        </div>
+      </div>
+
+      <div class="service-preview-block">
+        <img src="assets/icons/services/brake.svg" alt="Brakes" />
+        <div>
+          <h3>BRAKES</h3>
+          <p>Pad and rotor replacement, inspections, and maintenance.</p>
+        </div>
+      </div>
+
+      <div class="service-preview-block">
+        <img src="assets/icons/services/battery.svg" alt="Battery" />
+        <div>
+          <h3>BATTERIES</h3>
+          <p>Testing, replacement, or upgrades—no tow truck needed.</p>
+        </div>
+      </div>
+
+      <div class="service-preview-block">
+        <img src="assets/icons/services/detail.svg" alt="Detailing" />
+        <div>
+          <h3>DETAILING</h3>
+          <p>Interior and exterior cleans, polishes, and shines— at your location.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-preview-block">
+        <img src="assets/icons/services/inspect.svg" alt="Inspections" />
+        <div>
+          <h3>INSPECTIONS</h3>
+          <p>Full-mechanical, yearly check-up, and pre-purchase inspections.</p>
+        </div>
+      </div>
+
+      <div class="service-preview-block">
+        <img src="assets/icons/services/ac.svg" alt="A/C" />
+        <div>
+          <h3>HVAC</h3>
+          <p>We'll recharge or repair your climate control to keep you cozy.</p>
+        </div>
+      </div>
+
+      <div class="service-preview-block">
+        <img src="assets/icons/services/nav.svg" alt="Navigation" />
+        <div>
+          <h3>INFOTAINMENT</h3>
+          <p>We install or upgrade GPS and smart device integration and custom
+            systems.</p>
+        </div>
+      </div>
+    </div>
+    <!-- "And much more" link -->
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="services.html" class="link">
+        AND MANY MORE →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

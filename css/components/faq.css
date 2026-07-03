@@ -1,0 +1,36 @@
+.faq-section {
+    color: var(--text-bright-1);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.faq-section h2 {
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 200;
+    font-size: 2rem;
+    color: var(--text-bright-3);
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    color: var(--text-bright-1);
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    color: var(--text-bright-2);
+    font-size: 1rem;
+    line-height: 1.6;
+}

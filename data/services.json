@@ -13,8 +13,8 @@
     "id": "INSP1",
     "name": "Full Mechanical Inspection",
     "descWeb": "Extensive report of vehicle health and wellness.",
-    "price": 119.95,
-    "priceLabel": "From $119.95",
+    "price": 229.75,
+    "priceLabel": "From $229.75",
     "onGrid": true,
     "partsExtra": false,
     "laborOnly": true

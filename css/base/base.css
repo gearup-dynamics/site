@@ -1,0 +1,95 @@
+body {
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Helvetica', sans-serif;
+
+    background: linear-gradient(to bottom,
+            var(--bg-mid),
+            var(--bg-dark));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: var(--text-bright-1);
+}
+
+html {
+    height: 100%;
+    background-color: black;
+}
+
+a {
+    color: (--text-bright-1);
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.link {
+    display: inline-block;
+
+    color: var(--link-light);
+    font-weight: 300;
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+form input,
+form textarea {
+    background-color: var(--form-bg);
+    color: var(--text-bright-1);
+    border: 1px solid var(--form-outline-base);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--form-outline-active);
+}
+
+form button {
+    background-color: var(--form-button-base);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: var(--form-button-active);
+    transform: scale(1.05);
+}
+
+#form-status {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+}

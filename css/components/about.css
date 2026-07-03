@@ -1,0 +1,126 @@
+.about-section {
+    display: flex;
+    padding-bottom: 8rem;
+    padding-top: 12rem;
+    flex-direction: row;
+    min-height: 600px;
+    color: var(--text-bright-2);
+    text-align: right;
+}
+
+.about-text-block {
+    flex: 0.4;
+    background-color: var(--bg-muted);
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text-block h1 {
+    color: var(--text-bright-1);
+    font-size: 3rem;
+    font-weight: 200;
+    padding-bottom: 3rem;
+}
+
+.about-text-content {
+    margin-bottom: 2rem;
+}
+
+.about-text-content h2 {
+    font-weight: 300;
+    color: var(--text-bright-3);
+}
+
+.about-text-content p {
+    font-weight: 200;
+}
+
+.about-section-image {
+    flex: 0.6;
+    background: url('../../assets/images/bg/about-us.jpg') center center / cover no-repeat;
+    position: relative;
+    filter: brightness(60%);
+}
+
+.team-section {
+    margin-bottom: 2rem;
+}
+
+.team-section h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.employee-card {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 20rem;
+    align-items: center;
+}
+
+.employee-card img {
+    max-width: 160px;
+    border-radius: 10px;
+}
+
+.employee-card h2 {
+    font-weight: 200;
+    letter-spacing: 0.75px;
+    font-size: 2rem;
+}
+
+.employee-card h3 {
+    letter-spacing: 0.5px;
+    color: var(--text-bright-3);
+}
+
+.employee-card p {
+    font-weight: 200;
+    color: var(--text-bright-2);
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.employee-card span {
+    font-weight: 400;
+}
+
+.skills-section {
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.skills-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.skills-section p {
+    font-weight: 200;
+    text-align: center;
+}
+
+.skills-columns {
+    display: flex;
+    gap: 2rem;
+    margin: 4rem 10% 0;
+}
+
+.skills-bar-bg {
+    background: var(--text-dark-1);
+    height: 8px;
+    margin-left: 6rem;
+}
+
+.skills-bar-fill {
+    width: 50%;
+    height: 100%;
+    background: var(--text-bright-3);
+    transition: width 1.5s ease-out;
+}

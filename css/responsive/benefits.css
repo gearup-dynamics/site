@@ -1,0 +1,31 @@
+/* tablet styles here */
+@media (max-width: 992px) {}
+
+/* mobile styles here */
+@media (max-width: 768px) {
+    .benefits-text {
+        background: url('../../assets/images/bg/services-benefits.jpg') center center / cover no-repeat;
+        flex: 1;
+    }
+
+    .benefits-text h1 {
+        background-color: var(--bg-muted);
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+    .benefit-item {
+        backdrop-filter: blur(5px) brightness(50%);
+        padding: 1rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .benefit-item h2 {
+        margin-top: 0;
+    }
+
+    .benefits-image {
+        display: none;
+    }
+}

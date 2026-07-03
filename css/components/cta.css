@@ -1,0 +1,40 @@
+.cta-section {
+    position: relative;
+    padding: 6rem 4rem;
+    text-align: center;
+    color: var(--text-bright-1);
+}
+
+.cta-section h3 {
+    color: var(--text-bright-2);
+    text-transform: uppercase;
+}
+
+.cta-section span {
+    font-weight: 700
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    background: var(--text-bright-1);
+    color: var(--text-dark-1);
+    border: none;
+    border-radius: 999px;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.cta-section .cta-button:hover {
+    transform: scale(1.1);
+    background: var(--text-bright-3);
+}

@@ -1,0 +1,71 @@
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact-grid-image {
+    filter: brightness(50%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.contact-grid-info {
+    color: var(--text-bright-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-grid-info img {
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+
+.contact-cta {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-bright-1);
+    text-align: center;
+}
+
+.contact-cta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.contact-cta p {
+    color: var(--text-bright-2);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-cta .cta-button {
+    display: inline-block;
+    background-color: var(--form-button-base);
+    color: var(--text-bright-1);
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-cta .cta-button:hover {
+    background-color: var(--form-button-active);
+}

@@ -1,0 +1,23 @@
+/* tablet styles here */
+@media (max-width: 992px) {}
+
+/* mobile styles here */
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .split-content {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .split-content h2 {
+        font-size: 2rem;
+    }
+    .split-content p{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}

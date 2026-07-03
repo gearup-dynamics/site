@@ -1,0 +1,9 @@
+/* tablet styles here */
+@media (max-width: 992px) {}
+
+/* mobile styles here */
+@media (max-width: 768px) {
+    .service-preview-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

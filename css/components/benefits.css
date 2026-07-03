@@ -1,0 +1,40 @@
+.benefits-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+    color: var(--text-bright-1)
+}
+
+.benefits-text {
+    flex: 0.5;
+    background-color: var(--bg-muted);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits-text h1 {
+    font-size: 2.5rem;
+    color: var(--text-bright-3);
+    margin-bottom: 2rem;
+}
+
+.benefit-item h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: var(--text-bright-1);
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    color: var(--text-bright-2);
+    margin-top: 0.5rem;
+}
+
+.benefits-image {
+    flex: 0.5;
+    background: url('../../assets/images/bg/services-benefits.jpg') center center / cover no-repeat;
+    position: relative;
+    filter: brightness(60%);
+}

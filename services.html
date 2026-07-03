@@ -10,69 +10,27 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-    </script>
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <div id="nav-placeholder"></div>
     <!-- Hero Section -->
-    <section id="services-hero" class="hero" style="
-        position: relative;
-        width: 100%;
-        height: 36rem;
-        display: flex;
-        justify-content: left;
-        align-items: top;
-        text-align: center;
-        overflow: hidden;
-    ">
+    <section id="services-hero" class="hero">
         <!-- Background Image -->
-        <div style="
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('assets/images/bg/services-hero.jpg');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(10%);
-            z-index: 1;
-            animation: slowBreathingZoom 20s ease-in-out infinite alternate;
-            transform-origin: center;
-        "></div>
-        <div style="
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-image: url('assets/images/overlay/blue-stripe-section1.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    opacity: 0.075;
-    z-index: 2;
-    pointer-events: none;
-  "></div>
-        <!-- Hero Text -->
-        <div class="hero-text" style="position: relative; z-index: 3; padding-top: 10rem; margin-left: 12%;">
+        <div class="hero-bg" style="background-image: url('assets/images/bg/services-hero.jpg');"></div>
+        <!-- Accent overlay image -->
+        <div class="hero-bg-overlay"></div>
+        <!-- Dark overlay tint -->
+        <div class="hero-bg-tint"></div>
+        <div class="hero-title" style="padding-top: 10rem">
             <div class="hero-title-wrapper">
+                <h1 class="hero-title">Automotive</h1>
                 <h1 class="hero-title">
-                    <span class="static-word">AUTOMOTIVE </span>
-                    <span id="rotatingWord">SERVICE</span>
+                    <span id="rotatingWord">Service</span>
                 </h1>
-                <h2 style="
-                font-family: 'Helvetica', sans-serif;
-                color: #CACACA;
-                font-size: 1.5rem;
-                font-weight: 200;
-                letter-spacing: 1.2px;
-                position: absolute;
-            ">
+                <h2 class="hero-subtitle-alt">
                     Delivered to Your Home Parking Space.
                 </h2>
             </div>
@@ -80,25 +38,23 @@
     </section>
 
     <!--- Services Section --->
-    <section style="padding-top: 6rem; max-width: 1000px; margin: 0 auto;">
-        <h2 style="font-size: 3.5rem; font-weight: 300; text-align: center; color: white;">
+    <section class="services-main">
+        <h2>
             Our Services
         </h2>
-        <p style="text-align: center; font-size: 0.9rem; font-weight: 200; color: #AAAAAA; margin-bottom: 4rem;">
+        <p>
             *Includes <strong>labor</strong>
             only — parts quoted before work completed</p>
-
-        <div
-            style="padding: 2rem; text-align: center; border: 1px solid #333; border-radius: 10px; background-color: #0a0a0a;">
-            <h1 style="font-size: 2rem; color: white; margin-bottom: 0.5rem;">Full
+        <div class="services-main-featured">
+            <h1>Full
                 Synthetic Oil Change</h1>
-            <h2 style="font-size: 1rem; letter-spacing: 0.5px; color: #CACACA; font-weight: 300;">The right oil and
+            <h2>The right oil and
                 filter for your
                 vehicle. OEM grade, specification, and viscosity. Torqued to specification, cleaned and handled with
                 care. At the most affordable price in Calgary, and comes with a complimentary multipoint inspection.
             </h2>
-            <h3 style="font-size: 3rem; font-weight: 500; color: rgb(127, 177, 249);">$99.95</h3>
-            <span style="font-size: 0.75rem; color: rgb(33, 82, 169);">FOR FIRST 5 LITRES. ADDITIONAL CHARGE FOR
+            <h3>$99.95</h3>
+            <span style="font-size: 0.75rem;">FOR FIRST 5 LITRES. ADDITIONAL $14.95/L FOR
                 LARGER QUANTITIES</span>
         </div>
 
@@ -142,87 +98,26 @@
             <h2>FREQUENTLY ASKED QUESTIONS</h2>
             <div class="faq-item">
                 <h3>Do you service all vehicle makes and models?</h3>
-                <p>Yes, we service domestic, import, and light-duty trucks.</p>
+                <p>Yes, we service domestic and import communter vehicles and light-duty trucks. We also service diesel vehicles and small engines.</p>
             </div>
             <div class="faq-item">
                 <h3>Do I need to supply parts?</h3>
-                <p>No, we source parts and quote them before any work begins.</p>
+                <p>No, we source parts and quote them before any work begins. You are welcome to supply your own parts without any parts or workmanship guarantees or warranties by our team.</p>
             </div>
             <div class="faq-item">
                 <h3>What is your service area?</h3>
-                <p>We service anywhere within Calgary, Okotoks, Chestermere, and Airdrie city limits without a mobile fee.  </p>
+                <p>We service anywhere within Calgary, Okotoks, Chestermere, and Airdrie city limits. Feel free to contact us if you are unsure. A mobile service fee may apply outside of Calgary. </p>
             </div>
             <div class="faq-item">
                 <h3>How do I pay?</h3>
-                <p>We accept credit, debit, and e-Transfer. Cash payments are accepted without small change.</p>
+                <p>We accept credit, debit, and e-Transfer. Cash payments are accepted without change as we do not carry cash on hand.</p>
             </div>
         </div>
     </section>
 
     <div id="footer-placeholder"></div>
 
-    <!-- Navigation Bar Fetch -->
-    <script>
-        fetch("partials/nav.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("nav-placeholder").innerHTML = data;
-            });
-    </script>
-    <!-- Footer Fetch -->
-    <script>
-        fetch("partials/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
-    </script>
-    <!-- Rotating Hero Word-->
-    <script>
-        const words = ["SERVICE", "REPAIR", "MAINTENANCE", "DETAILING", "SOLUTIONS"];
-        let index = 0;
-        const rotatingWord = document.getElementById("rotatingWord");
-
-        function rotateWord() {
-            // Fade out current word
-            rotatingWord.classList.add("fade-out");
-
-            setTimeout(() => {
-                // Update the word after fade-out
-                index = (index + 1) % words.length;
-                rotatingWord.textContent = words[index];
-
-                // Fade back in
-                rotatingWord.classList.remove("fade-out");
-            }, 250); // Matches the CSS transition time
-        }
-        setInterval(rotateWord, 1500);
-    </script>
-    <!-- Autopopulate Service Information-->
-    <script>
-        fetch("data/services.json")
-            .then(response => response.json())
-            .then(services => {
-                const grid = document.getElementById("services-grid");
-
-                services
-                    .filter(service => service.onGrid)
-                    .forEach(service => {
-                        const card = document.createElement("div");
-                        card.className = "service-card";
-
-                        card.innerHTML = `
-            <h1>${service.name}</h1>
-            <h2>${service.descWeb}</h2>
-            <h3>${service.priceLabel}${service.partsExtra ? '<span class="sup-note">*</span>' : ''}</h3>
-          `;
-
-                        grid.appendChild(card);
-                    });
-            });
-    </script>
-
-
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

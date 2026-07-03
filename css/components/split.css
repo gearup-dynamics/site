@@ -1,0 +1,54 @@
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin-top: 5rem;
+}
+
+.split-content {
+    position: relative;
+    z-index: 1;
+    margin-left: 30%;
+    max-width: 400px;
+    text-align: right;
+}
+
+.split-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.split-content p {
+    font-size: 1.0rem;
+    margin-top: 0.5rem;
+    letter-spacing: 1.2px;
+    font-weight: 200;
+}
+
+.map-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--bg-muted);
+    height: 100%;
+}
+
+.map {
+    height: 100%;
+}
+
+.bg-pan-animate-split {
+    background-size: 110%;
+    background-repeat: no-repeat;
+    animation: bgPanX 30s ease-in-out infinite alternate;
+    flex: 1;
+    min-width: 250px;
+    background-image: url('../../assets/images/section2/bg.jpg');
+    background-position: left center;
+    background-size: 110%;
+    position: relative;
+    color: var(--text-bright-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}

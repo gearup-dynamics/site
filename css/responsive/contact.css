@@ -1,0 +1,34 @@
+/* tablet styles here */
+@media (max-width: 992px) {}
+
+/* mobile styles here */
+@media (max-width: 768px) {
+    .contact-grid {
+        display: table-row;
+    }
+
+    .contact-grid-info {
+        padding: 0 0 4rem auto;
+        background-image: url('/assets/images/bg/contact-header.jpg');
+    }
+
+    .contact-grid-info img {
+        max-width: 200px;
+        padding: 3rem;
+        backdrop-filter: brightness(40%) blur(5px);
+    }
+
+    .contact-grid-info p, a {
+        backdrop-filter: blur(10px);
+        padding: 0.25rem;
+        border-radius: 999px;
+    }
+
+    .contact-grid-image {
+        display: none;
+    }
+
+    .contact-cta {
+        margin: 2.5rem 3rem 6rem 3rem;
+    }
+}

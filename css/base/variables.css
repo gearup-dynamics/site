@@ -1,0 +1,46 @@
+:root {
+    /* Editable Palette */
+    --palette-1: #FFFFFF;
+    --palette-2: #CACACA;
+    --palette-3: #7fb1f9;
+    --palette-4: #5ea2ff;
+    --palette-5: #255d9b;
+    --palette-6: #18325a;
+    --palette-7: #333333;
+    --palette-8: #222222;
+    --palette-9: #000716;
+    --palette-10: #0a0a0a;
+    --palette-11: #000000;
+
+
+    /* Background */
+    --bg-mid: #000716;
+    --bg-muted: #0a0a0a;
+    --bg-dark: #000000;
+
+    /* Links */
+    --link-light: #7fb1f9;
+    --link-dark: #;
+
+    /* Text */
+    --text-bright-1: #FFFFFF;
+    --text-bright-2: #CACACA;
+    --text-bright-3: #7fb1f9; 
+    --text-dark-1: #333333;
+
+    /* Buttons */
+    --button-bg-1: #000000;
+    --button-bg-2: #FFFFFF;
+    --button-bg-3: #7fb1f9;
+    --button-bg-3-active: #5ea2ff;
+    --button-text-1: #FFFFFF;
+    --button-text-2: #000000;
+    --button-text-3: #222222;
+
+    /* Forms */
+    --form-bg: #0A0A0A;
+    --form-outline-base: #222222; 
+    --form-outline-active: #7fb1f9; 
+    --form-button-base: #18325a;
+    --form-button-active: #255d9b;
+}

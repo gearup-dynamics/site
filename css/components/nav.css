@@ -1,0 +1,92 @@
+.navbar {
+    position: relative;
+    justify-content: center;
+    display: flex;
+
+    gap: 6rem;
+
+    background-color: var(--bg-dark);
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+.nav-logo {
+    display: flex;
+    margin: 1rem 1rem;
+}
+
+.nav-logo-mobile {
+    display: none;
+    margin: 1rem 1rem;
+}
+
+.nav-logo img {
+    max-height: 80px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 0rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-bright-2);
+    transition: transform 0.2s ease;
+}
+.nav-link:hover {
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+
+.nav-button {
+    color: var(--button-text-2);
+    background: var(--button-bg-2);
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    transition: transform 0.2s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.15);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-mobile-menu {
+    display: none
+}
+.nav-link-mobile {
+    color: var(--text-bright-2);
+    transition: transform 0.2s ease;
+}
+.nav-link-mobile:hover {
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+.nav-button-mobile {
+    color: var(--text-bright-1);
+    background-color: var(--form-button-base);
+    transition: transform 0.2s ease;
+}
+.nav-button-mobile:hover {
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+
+#nav-placeholder {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#nav-placeholder nav {
+    width: 100%;
+}

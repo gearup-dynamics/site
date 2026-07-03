@@ -9,126 +9,96 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-    </script>
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <div id="nav-placeholder"></div>
+
     <!-- Hero Section -->
-    <section style="padding-top: 12rem; text-align: center;">
-        <p style="color: #CACACA; letter-spacing: 2px; font-size: 18px; text-transform: uppercase;">Introducing
-            Calgary's <span style="color:white;">Premier</span> Automotive Service,</p>
-        <img src="assets/images/branding/banner.png" alt="GearUP Automotive Large Logo Clean"
-            style="max-width: 450px; padding: 4rem;">
+    <section class="hero-alt">
+        <p>Introducing
+            Calgary's <span style="color:var(--text-bright-1)">Premier</span> Automotive Service,</p>
+        <img src="assets/images/branding/banner.png" alt="GearUP Automotive Large Logo Clean">
     </section>
 
     <!-- About Section -->
-    <section style="
-        display: flex;
-        padding-bottom: 8rem;
-        padding-top: 12rem;
-        flex-direction: row;
-        min-height: 600px;
-        font-family: Helvetica, sans-serif;
-        color: #CACACA;
-        text-align: right;">
-        <div style="
-        flex: 0.4;
-        background-color: #0a0a0a;
-        padding: 6rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;">
-            <h1 style="color: white; font-size: 3rem; font-weight: 200; padding-bottom: 3rem;">ABOUT US</h1>
-            <div style="margin-bottom: 2rem;">
-                <h2 style="font-weight: 300; color:rgb(127, 177, 249);">OUR STORY</h2>
-                <p style="font-weight: 200;">Established in 2024 by a passionate mechanical engineering student, we
+    <section class="about-section">
+        <div class="about-text-block">
+            <h1>ABOUT US</h1>
+            <div class="about-text-content">
+                <h2>OUR STORY</h2>
+                <p>Established in 2024 by a passionate mechanical engineering student, we
                     dreamt of combining years of dealership and shop experience with detailed knowledge of automotive
-                    engineering.
+                    engineering.<br>
                     We understand the hassle and costliness of traditional automotive shops, and strive to cut those
                     needless costs and wasted time to bring truly exceptional service.</p>
             </div>
-            <div>
-                <h2 style="font-weight: 300; color:rgb(127, 177, 249);">OUR MISSION</h2>
-                <p style="font-weight: 200;">Driven by a passion for automotive excellence and an engineering
+            <div class="about-text-content">
+                <h2>OUR MISSION</h2>
+                <p>Driven by a passion for automotive excellence and an engineering
                     foundation, we are committed to
                     making high-quality, affordable, and highly accessible mobile auto care a reality for every vehicle
                     owner.</p>
             </div>
         </div>
-        <div style="
-        flex: 0.6;
-        background: url('assets/images/bg/about-us.jpg') center center / cover no-repeat;
-        position: relative;
-        filter: brightness(60%);">
+        <div class="about-section-image">
         </div>
     </section>
 
     <!-- Team Section -->
-    <section style="margin-bottom: 2rem; text-align: center;">
-        <h1 style="font-size: 3rem; letter-spacing: 2px; font-weight: 200;">OUR TEAM</h1>
-    </section>
-    <!-- Employee A -->
-    <section style="display: flex; gap: 4rem; padding: 4rem 20rem; align-items: center;">
-        <img src="assets/images/employees/noah.webp" alt="Noah Cornejo GearUP"
-            style="max-width: 160px; border-radius: 10px;">
-        <div>
-            <h2 style="font-weight: 200; letter-spacing: 0.75px; font-size: 2rem;">Noah <span
-                    style="font-weight: 400;">Cornejo</span></h2>
-            <h3 style="letter-spacing: 0.5px; color: #70B3FF;">Chief Technician</h3>
-            <p style="font-weight: 200; color: #CACACA; margin: 1rem 0; line-height: 1.6;">4th year Undergraduate BSc
-                Mechanical Engineering, Schulich School of Engineering.
-                <br>Noah brings all-make-and-model experience, with dealership experience from multiple brands such as
-                GM, Hyundai, and Chevrolet.
-            </p>
-        </div>
-    </section>
-    <!-- Employee B -->
-    <section style="display: flex; gap: 4rem; padding: 4rem 20rem; align-items: center;">
-        <img src="assets/images/employees/placeholder.jpg" alt="Aris Bismonte GearUP"
-            style="max-width: 160px; border-radius: 10px;">
-        <div>
-            <h2 style="font-weight: 200; letter-spacing: 0.75px;font-size: 2rem;">Aris <span
-                    style="font-weight: 400;">Bismonte</span></h2>
-            <h3 style="letter-spacing: 0.5px;color: #70B3FF;">Technician</h3>
-            <p style="font-weight: 200; color: #CACACA; margin: 1rem 0; line-height: 1.6;">1st year Undergraduate SAIT
-                Business Administration.<br>
-                Aris brings a fresh perspective, from Alberta's leading industry-standard tech institution.</p>
-        </div>
+    <section class="team-section">
+        <h1>OUR TEAM</h1>
+        <section class="employee-card">
+            <img src="assets/images/employees/noah.webp" alt="Noah Cornejo GearUP">
+            <div>
+                <h2>Noah <span>Cornejo</span></h2>
+                <h3>Chief Technician</h3>
+                <p>4th year Undergraduate BSc
+                    Mechanical Engineering, Schulich School of Engineering.
+                    <br>Noah brings all-make-and-model experience, with dealership experience from multiple brands such
+                    as
+                    GM, Hyundai, and Chevrolet.
+                </p>
+            </div>
+        </section>
+        <section class="employee-card">
+            <img src="assets/images/employees/placeholder.jpg" alt="Aris Bismonte GearUP">
+            <div>
+                <h2>Aris <span>Bismonte</span></h2>
+                <h3>Technician</h3>
+                <p>1st year Undergraduate SAIT
+                    Business Administration.<br>
+                    Aris brings a fresh perspective, from Alberta's leading industry-standard tech institution.</p>
+            </div>
+        </section>
     </section>
 
     <!-- Skills Section -->
-    <section style="margin-top: 2rem; justify-content: center;">
-        <h1 style="text-align: center; font-size: 3rem; letter-spacing: 2px; font-weight: 200;">OUR
-            SKILLS</h1>
-        <p style="font-weight: 200; text-align: center; margin-bottom: 6rem;">
-            Up-to-date with leading industry standards, we bring the right expertise to every job.</p>
-        <div style="display: flex; gap: 2rem; margin-left: 16rem;">
-            <div style="flex: 1; text-align: right;">
+    <section class="skills-section">
+        <h1>OUR SKILLS</h1>
+        <p>Up-to-date with leading industry standards, we bring the right expertise to every job.</p>
+        <div class="skills-columns">
+            <div style="flex: 1">
                 <p>OEM Service</p>
-                <div style="background: #333; height: 8px; margin-left: 6rem;">
-                    <div style="width: 85%; height: 100%; background: rgb(127, 177, 249);"></div>
+                <div class="skills-bar-bg">
+                    <div class="skills-bar-fill" data-fill="100"></div>
                 </div>
                 <p>Manufacturer Expertise</p>
-                <div style="background: #333; height: 8px; margin-left: 6rem;">
-                    <div style="width: 90%; height: 100%; background: rgb(127, 177, 249);"></div>
+                <div class="skills-bar-bg">
+                    <div class="skills-bar-fill" data-fill="100"></div>
                 </div>
                 <p>All Makes & Models Repair</p>
-                <div style="background: #333; height: 8px; margin-left: 6rem;">
-                    <div style="width: 77%; height: 100%; background: rgb(127, 177, 249);"></div>
+                <div class="skills-bar-bg">
+                    <div class="skills-bar-fill" data-fill="100"></div>
                 </div>
                 <p>Customer Service</p>
-                <div style="background: #333; height: 8px; margin-left: 6rem;">
-                    <div style="width: 95%; height: 100%; background: rgb(127, 177, 249);"></div>
+                <div class="skills-bar-bg">
+                    <div class="skills-bar-fill" data-fill="100"></div>
                 </div>
             </div>
-            <div style="flex: 1;">
+            <div style="flex: 1">
                 <p><strong>5+</strong><br>Years Of Experience</p>
                 <p><strong>10</strong><br>OEM Excellency Certifications</p>
                 <p><strong>4 000+</strong><br>Vehicle Years, Makes & Models</p>
@@ -138,35 +108,16 @@
     </section>
 
     <!-- CTA Section -->
-    <section style="position: relative; padding: 6rem 4rem; text-align: center; color: white;">
-        <h3 style="color: #CACACA; text-transform: uppercase;">Ready for <span style="font-weight: 500">unmatched</span>
-            auto service?</h3>
-        <h2 style="font-size: 2rem; margin: 1rem 0; font-weight: 200; margin-bottom: 2rem;">GET YOUR FREE CONSULTATION
-            TODAY</h2>
-        <a style="display:inline-block; margin-top: 2rem; padding: 1.5rem 3rem; background: #0053AF; color: white; border: none; border-radius: 12px; font-weight: 300; font-size: 1rem; transition: transform 0.1s ease, background-color 0.3s ease;"
-            onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#70B3FF';"
-            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#0053AF';" href="booking.html">
+    <section class="cta-section">
+        <h3>Ready for <span>unmatched</span> auto service?</h3>
+        <h2>GET YOUR FREE CONSULTATION TODAY</h2>
+        <a class="cta-button" href="booking.html">
             BOOK NOW</a>
     </section>
 
     <div id="footer-placeholder"></div>
 
-    <!-- Navigation Bar Fetch -->
-    <script>
-        fetch("partials/nav.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("nav-placeholder").innerHTML = data;
-            });
-    </script>
-    <!-- Footer Fetch -->
-    <script>
-        fetch("partials/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
-    </script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 
