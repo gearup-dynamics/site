@@ -1,0 +1,50 @@
+.hero-404 {
+    position: relative;
+    width: 100%;
+    min-height: 36rem;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-text-404 {
+    z-index: 3
+}
+
+.hero-text-404 h1 {
+    color: var(--text-bright-1);
+    letter-spacing: 2px;
+    padding-top: 6rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.hero-text-404 h2 {
+    font-size: 2rem;
+    color: var(--text-bright-3);
+}
+
+.hero-text-404 h3 {
+    font-size: 1.75rem;
+    color: var(--text-bright-2);
+}
+
+.hero-text-404 a {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    background: var(--button-bg-3);
+    color: var(--button-text-3);
+    border: none;
+    border-radius: 999px;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-text-404 a:hover {
+    transform: scale(1.1);
+    background-color: var(--button-bg-3-active);
+}
