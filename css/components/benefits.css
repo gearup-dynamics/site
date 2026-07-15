@@ -14,13 +14,13 @@
     justify-content: center;
 }
 
-.benefits-text h1 {
+.benefits-text h2 {
     font-size: 2.5rem;
     color: var(--text-bright-3);
     margin-bottom: 2rem;
 }
 
-.benefit-item h2 {
+.benefit-item h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
     color: var(--text-bright-1);

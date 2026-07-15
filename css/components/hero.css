@@ -49,6 +49,15 @@
     overflow: hidden;
 }
 
+.hero-left {
+    position: relative;
+    height: 30rem;
+    align-items: top;
+    justify-content: left;
+    overflow: hidden;
+    text-align: left;
+}
+
 .hero-testimonials {
     position: relative;
     overflow-y: hidden;
@@ -119,6 +128,11 @@
     z-index: 3;
 }
 
+.hero-pretitle {
+    color: var(--text-bright-2);
+    font-size: clamp(0.75rem, 3vw, 1.5rem);
+}
+
 .hero-subtitle {
     margin-top: 1rem;
     color: var(--text-bright-2);
@@ -175,21 +189,18 @@
     color: var(--text-bright-1);
     position: absolute;
     top: 8rem;
-    left: 15%;
+    left: 10rem;
 }
 
 .testimonial-content {
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     display: flex;
     flex: 1 1 0;
     min-height: 12rem;
-    position: relative;
-    margin: 0 13% 0 13%;
+    margin: 2rem 10rem 2rem 8rem;
     align-items: center;
 }
 

@@ -1,0 +1,38 @@
+[
+    {
+        "src": "/assets/images/oil-logos/api.png",
+        "alt": "API Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/ilsac.png",
+        "alt": "ILSAC Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/acea.png",
+        "alt": "ACEA Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/dexos1.png",
+        "alt": "Dexos1 Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/dexos2.png",
+        "alt": "Dexos2 Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/bmw.svg",
+        "alt": "BMW Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/mercedes.png",
+        "alt": "Mercedes Benz Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/volkswagen.png",
+        "alt": "Volkswagen Motor oil certification"
+    },
+    {
+        "src": "/assets/images/oil-logos/volvo.png",
+        "alt": "Volvo Motor oil certification"
+    }
+]

@@ -1,0 +1,127 @@
+/* Third-Party Marketing Sections */
+
+.tpm-block {
+    min-height: 10rem;
+    align-items: top;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.tpm-block h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+.tpm-block h3 {
+    color: var(--text-bright-3);
+}
+
+.tpm-block h2,
+.tpm-block h3 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.tpm-card {
+    display: flex;
+    gap: 4rem;
+    margin: 0 15% 0 15%;
+    text-align: left;
+}
+
+.tpm-logo {
+    min-width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.tpm-card p {
+    font-weight: 300;
+    color: var(--text-bright-2);
+}
+
+.tpm-card strong {
+    color: var(--text-bright-1);
+}
+
+.tpm-list {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    color: var(--text-bright-2);
+}
+
+.oil-logo-slider {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.oil-logo {
+    width: 140px;
+    height: 80px;
+    object-fit: contain;
+    opacity: 0;
+}
+
+.oil-logo:nth-child(1) {
+    --logo-x: -40px;
+}
+.oil-logo:nth-child(2) {
+    --logo-x: 0px;
+}
+.oil-logo:nth-child(3) {
+    --logo-x: 40px;
+}
+
+.oil-logo-slider.entering .oil-logo {
+    animation: oilLogoEnter 400ms ease forwards;
+}
+.oil-logo-slider.leaving .oil-logo {
+    animation: oilLogoLeave 400ms ease forwards;
+    animation-fill-mode: both;
+}
+.oil-logo-slider.entering .oil-logo:nth-child(1) {
+    animation-delay: 0ms;
+}
+.oil-logo-slider.entering .oil-logo:nth-child(2) {
+    animation-delay: 100ms;
+}
+.oil-logo-slider.entering .oil-logo:nth-child(3) {
+    animation-delay: 200ms;
+}
+.oil-logo-slider.leaving .oil-logo:nth-child(1) {
+    animation-delay: 0ms;
+}
+.oil-logo-slider.leaving .oil-logo:nth-child(2) {
+    animation-delay: 100ms;
+}
+.oil-logo-slider.leaving .oil-logo:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+@keyframes oilLogoEnter {
+    from {
+        opacity: 0;
+        translate: calc(var(--logo-x) - 60px) 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: var(--logo-x) 0;
+    }
+}
+
+@keyframes oilLogoLeave {
+    from {
+        opacity: 1;
+        translate: var(--logo-x) 0;
+    }
+
+    to {
+        opacity: 0;
+        translate: calc(var(--logo-x) + 60px) 0;
+    }
+}

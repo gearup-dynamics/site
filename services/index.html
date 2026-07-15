@@ -7,14 +7,14 @@
     <meta name="description"
         content="Automotive services in Calgary, delivered to your doorstep. We do oil changes, brakes, batteries, inspections, customs, and more.">
 
-    <title>GearUP Automotive | Full Auto Services List</title>
+    <title>GearUP Automotive | Automotive Services</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
     <link rel="canonical" href="https://gearup-auto.ca/services">
 
     <!-- Main CSS-->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 </head>
 
 <body>
@@ -22,16 +22,14 @@
     <!-- Hero Section -->
     <section id="services-hero" class="hero">
         <!-- Background Image -->
-        <div class="hero-bg" style="background-image: url('assets/images/bg/services-hero.jpg');"></div>
+        <div class="hero-bg" style="background-image: url('/assets/images/bg/services-hero.jpg');"></div>
         <!-- Accent overlay image -->
         <div class="hero-bg-overlay"></div>
         <!-- Dark overlay tint -->
         <div class="hero-bg-tint"></div>
         <div class="hero-title" style="padding-top: 10rem">
             <div class="hero-title-wrapper">
-                <h1 class="hero-title">Automotive</h1>
-                <h1 class="hero-title">
-                    <span id="rotatingWord">Service</span>
+                <h1 class="hero-title">Automotive<br><span id="rotatingWord">Service</span>
                 </h1>
                 <h2 class="hero-subtitle-alt">
                     Delivered to Your Home Parking Space.
@@ -48,47 +46,44 @@
         <p>
             *Includes <strong>labor</strong>
             only — parts quoted before work completed</p>
-        <div class="services-main-featured">
-            <h1>Full
-                Synthetic Oil Change</h1>
-            <h2>The right oil and
+        <a class="services-main-featured" href="/services/oil-change.html">
+            <h2>Full
+                Synthetic Oil Change</h2>
+            <h3>The right oil and
                 filter for your
                 vehicle. OEM grade, specification, and viscosity. Torqued to specification, cleaned and handled with
                 care. At the most affordable price in Calgary, and comes with a complimentary multipoint inspection.
-            </h2>
-            <h3>$99.95</h3>
+            </h3>
+            <h4>$99.95</h4>
             <span style="font-size: 0.75rem;">FOR FIRST 5 LITRES. ADDITIONAL $14.95/L FOR
                 LARGER QUANTITIES</span>
-        </div>
+        </a>
 
         <div id="services-grid" class="services-grid"></div>
     </section>
 
     <!-- Contact Button -->
-    <section style="position: relative; padding-top: 2rem; padding-bottom: 8rem; text-align: center; color: white;">
-        <h3 style="font-size: 1rem; color: #CACACA;">Don't see what you need?</h3>
-        <h2 style="font-size: 2rem; margin: 1rem 0; font-weight: 200; margin-bottom: 2rem;">CONTACT US TODAY</h2>
-        <a style="display:inline-block; padding: 1.5rem 3rem; background: #0053AF; color: white; border: none; border-radius: 12px; font-weight: 300; font-size: 1rem; transition: transform 0.1s ease, background-color 0.3s ease;"
-            onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#70B3FF';"
-            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#0053AF';" href="contact.html">
-            CALL / TEXT / EMAIL</a>
+    <section class="easy-button">
+        <h3>Don't see what you need?</h3>
+        <h2>CONTACT US TODAY</h2>
+        <a class="service-booking-button" href="/contact.html">CALL / TEXT / EMAIL</a>
     </section>
 
     <!--- Benefits Section -->
     <section class="benefits-section">
         <div class="benefits-text">
-            <h1>WHY CHOOSE MOBILE SERVICE?</h1>
+            <h2>WHY CHOOSE MOBILE SERVICE?</h2>
             <div class="benefit-item">
-                <h2>CONVENIENCE</h2>
+                <h3>CONVENIENCE</h3>
                 <p>We come to your location—home driveway, garage, or office parking. No awkward drop-off coordination
                     required.</p>
             </div>
             <div class="benefit-item">
-                <h2>TIME</h2>
+                <h3>TIME</h3>
                 <p>No waiting rooms, no "quick" lube line-ups, no delays. Get service on your schedule.</p>
             </div>
             <div class="benefit-item">
-                <h2>COST</h2>
+                <h3>COST</h3>
                 <p>No shop overhead = lower prices for you. We have the most competitive pricing in Calgary!</p>
             </div>
         </div>
@@ -124,7 +119,7 @@
 
     <div id="footer-placeholder"></div>
 
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>

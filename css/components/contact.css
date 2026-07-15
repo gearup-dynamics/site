@@ -16,6 +16,12 @@
     z-index: 1;
 }
 
+.contact-header {
+    color: var(--text-bright-1);
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
 .contact-grid-info {
     color: var(--text-bright-2);
     display: flex;
@@ -26,9 +32,9 @@
     padding: 2rem;
 }
 
-.contact-grid-info img {
-    max-width: 300px;
-    margin-bottom: 2rem;
+.contact-grid-logo {
+    max-width: 200px;
+    margin-bottom: 1rem;
 }
 
 
@@ -68,4 +74,24 @@
 
 .contact-cta .cta-button:hover {
     background-color: var(--form-button-active);
+}
+
+.easy-button {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    text-align: center;
+    color: var(--text-bright-1);
+}
+
+.easy-button h3 {
+    font-size: 1rem;
+    color: var(--text-bright-2);
+}
+
+.easy-button h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 200;
+    margin-bottom: 2rem;
 }

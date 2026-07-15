@@ -3,8 +3,11 @@
 
 /* mobile styles here */
 @media (max-width: 768px) {
-    .faq-container {
-        margin: auto 3rem auto 3rem;
-        text-align: left;
+    .tpm-logo {
+        display: none;
+    }
+
+    .tpm-list {
+        margin-left: 2rem;
     }
 }

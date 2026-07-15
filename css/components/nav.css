@@ -63,6 +63,11 @@
 .nav-mobile-menu {
     display: none
 }
+
+.nav-mobile-menu a {
+    border-radius: 0px;
+}
+
 .nav-link-mobile {
     color: var(--text-bright-2);
     transition: transform 0.2s ease;
@@ -75,6 +80,7 @@
     color: var(--text-bright-1);
     background-color: var(--form-button-base);
     transition: transform 0.2s ease;
+    border-radius: 0px;
 }
 .nav-button-mobile:hover {
     transform: scale(1.15);

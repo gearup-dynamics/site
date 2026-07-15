@@ -12,6 +12,7 @@
 @import "components/about.css";
 @import "components/cta.css";
 @import "components/split.css";
+@import "components/tpm.css";
 
 @import "pages/404.css";
 
@@ -25,3 +26,4 @@
 @import "responsive/contact.css";
 @import "responsive/about.css";
 @import "responsive/404.css";
+@import "responsive/tpm.css";

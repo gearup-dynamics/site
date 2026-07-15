@@ -2,23 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://gearup-auto.ca/</loc>
+        <loc>https://gearup-auto.ca</loc>
     </url>
 
     <url>
-        <loc>https://gearup-auto.ca/services.html</loc>
+        <loc>https://gearup-auto.ca/services</loc>
     </url>
 
     <url>
-        <loc>https://gearup-auto.ca/about.html</loc>
+        <loc>https://gearup-auto.ca/about</loc>
     </url>
 
     <url>
-        <loc>https://gearup-auto.ca/contact.html</loc>
+        <loc>https://gearup-auto.ca/contact</loc>
     </url>
-
-    <url>
-        <loc>https://gearup-auto.ca/booking.html</loc>
-    </url>
-
 </urlset>

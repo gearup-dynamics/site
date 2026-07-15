@@ -11,6 +11,7 @@ import "./hero-word.js";
 import "./hero-bg.js";
 import "./testimonials.js";
 import "./map.js";
+import "./oil-logos.js";
 
 // 4. Forms
 import "./contact.js";

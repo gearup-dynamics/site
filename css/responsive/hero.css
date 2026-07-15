@@ -57,4 +57,8 @@
     .hero-alt {
         display: none;
     }
+
+    .mobile-hidden {
+        display: none;
+    }
 }
